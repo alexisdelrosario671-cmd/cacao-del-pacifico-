@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cacao del Pacífico | Tratamiento, Inspección y Exportación de Cacao</title>
+<meta name="description" content="Especialistas en recepción, inspección, fermentación, secado, clasificación y exportación de cacao de alta calidad desde Guayaquil, Ecuador hacia mercados internacionales.">
+<meta name="keywords" content="exportación de cacao, tratamiento de cacao, inspección de cacao, cacao Ecuador, Guayaquil">
+<meta property="og:title" content="Cacao del Pacífico — Calidad que cruza fronteras">
+<meta property="og:description" content="Especialistas en tratamiento, inspección y exportación de cacao para mercados nacionales e internacionales.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- Subtle particle canvas -->
+<canvas id="particles" aria-hidden="true"></canvas>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="header__inner container">
+    <a href="#inicio" class="brand">
+      <img src="ilq-logo.png" alt="Cacao del Pacífico" class="brand__logo">
+      <span class="brand__name">Cacao<em>del Pacífico</em></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#inicio" class="nav__link is-active">Inicio</a>
+      <a href="#nosotros" class="nav__link">Nosotros</a>
+      <a href="#servicios" class="nav__link">Servicios</a>
+      <a href="#tratamiento" class="nav__link">Tratamiento</a>
+      <a href="#galeria" class="nav__link">Galería</a>
+      <a href="#exportacion" class="nav__link">Exportación</a>
+      <a href="#contacto" class="nav__link nav__link--cta">Contacto</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <div class="hero__bg" style="background-image:url('img/hero-bg.jpg')"></div>
+  <div class="hero__overlay"></div>
+
+  <div class="hero__content container">
+    <p class="eyebrow reveal">Tratamiento · Inspección · Exportación</p>
+    <h1 class="hero__title reveal">Calidad que <span>cruza fronteras</span></h1>
+    <p class="hero__subtitle reveal">Especialistas en tratamiento, inspección y exportación de cacao para mercados nacionales e internacionales, desde Guayaquil hacia el mundo.</p>
+    <div class="hero__actions reveal">
+      <a href="#nosotros" class="btn btn--ghost">Conocer más</a>
+      <a href="#contacto" class="btn btn--shine">Contactar</a>
+    </div>
+  </div>
+
+  <!-- Signature: liquid-glass cacao pod, cross-section, floating -->
+  <div class="pod-glass" id="podGlass" aria-hidden="true">
+    <svg viewBox="0 0 220 340" class="pod-glass__svg">
+      <defs>
+        <linearGradient id="podGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#e0be78" stop-opacity="0.55"/>
+          <stop offset="100%" stop-color="#5b361e" stop-opacity="0.35"/>
+        </linearGradient>
+      </defs>
+      <path d="M110 8 C170 8 208 70 208 165 C208 260 170 332 110 332 C50 332 12 260 12 165 C12 70 50 8 110 8 Z" fill="url(#podGrad)" stroke="rgba(240,225,200,0.5)" stroke-width="1.5"/>
+      <path d="M110 20 C108 120 112 220 110 320" fill="none" stroke="rgba(240,225,200,0.35)" stroke-width="2"/>
+      <path d="M78 26 C60 120 62 220 80 316" fill="none" stroke="rgba(240,225,200,0.22)" stroke-width="1.5"/>
+      <path d="M142 26 C160 120 158 220 140 316" fill="none" stroke="rgba(240,225,200,0.22)" stroke-width="1.5"/>
+    </svg>
+    <span class="pod-glass__seed pod-glass__seed--1"></span>
+    <span class="pod-glass__seed pod-glass__seed--2"></span>
+    <span class="pod-glass__seed pod-glass__seed--3"></span>
+    <span class="pod-glass__seed pod-glass__seed--4"></span>
+  </div>
+
+  <a href="#nosotros" class="scroll-cue" aria-label="Desplázate hacia abajo">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ NOSOTROS + CARRUSEL ============ -->
+<section class="section" id="nosotros">
+  <div class="container">
+    <p class="eyebrow reveal">Nosotros</p>
+    <h2 class="section__title reveal">Cada lote cuenta una historia de precisión</h2>
+    <p class="section__lead reveal">Desde la recepción del grano hasta el contenedor de exportación, cuidamos cada etapa del proceso para asegurar que el cacao ecuatoriano llegue al mundo en su mejor condición.</p>
+  </div>
+
+  <div class="carousel reveal" id="carousel">
+    <div class="carousel__track" id="carouselTrack">
+      <figure class="carousel__slide is-active">
+        <img src="cosecha colec.png" alt="Recepción del grano de cacao" loading="lazy">
+        <figcaption class="glass">
+          <h3>Recepción del Grano</h3>
+          <p>Control de origen y pesaje inmediato al ingreso a planta.</p>
+        </figcaption>
+      </figure>
+      <figure class="carousel__slide">
+        <img src="inspeccion de calidad1.png" alt="Inspección de calidad del cacao" loading="lazy">
+        <figcaption class="glass">
+          <h3>Inspección de Calidad</h3>
+          <p>Evaluación sensorial y física bajo normas internacionales.</p>
+        </figcaption>
+      </figure>
+      <figure class="carousel__slide">
+        <img src="fermentacion controlada .png" alt="Fermentación controlada del cacao" loading="lazy">
+        <figcaption class="glass">
+          <h3>Fermentación Controlada</h3>
+          <p>Cajones rotativos con monitoreo constante de temperatura.</p>
+        </figcaption>
+      </figure>
+      <figure class="carousel__slide">
+        <img src="secado natural 1.png" alt="Secado natural del cacao" loading="lazy">
+        <figcaption class="glass">
+          <h3>Secado Natural</h3>
+          <p>Camas africanas y patios solares para un secado uniforme.</p>
+        </figcaption>
+      </figure>
+      <figure class="carousel__slide">
+        <img src="exprotacion internacional .png" alt="Exportación internacional de cacao" loading="lazy">
+        <figcaption class="glass">
+          <h3>Exportación Internacional</h3>
+          <p>Logística y documentación lista para 15 países de destino.</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <button class="carousel__arrow carousel__arrow--prev" id="prevArrow" aria-label="Anterior">‹</button>
+    <button class="carousel__arrow carousel__arrow--next" id="nextArrow" aria-label="Siguiente">›</button>
+
+    <div class="carousel__dots" id="carouselDots"></div>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS (Floating Cards) ============ -->
+<section class="section section--tinted" id="servicios">
+  <div class="container">
+    <p class="eyebrow reveal">Servicios</p>
+    <h2 class="section__title reveal">Diez etapas, un mismo estándar</h2>
+    <p class="section__lead reveal">Cubrimos todo el ciclo del tratamiento del cacao con protocolos trazables y personal certificado.</p>
+
+    <div class="float-grid" id="floatGrid">
+      <article class="float-card reveal" data-tilt>
+        <span class="float-card__icon" aria-hidden="true">📥</span>
+        <h3>Recepción del cacao</h3>
+        <p>Verificación de origen, humedad inicial y pesaje certificado a la entrada.</p>
+      </article>
+      <article class="float-card reveal" data-tilt>
+        <span class="float-card__icon" aria-hidden="true">🔍</span>
+        <h3>Inspección de calidad</h3>
+        <p>Análisis físico y sensorial siguiendo normas de exportación internacional.</p>
+      </article>
+      <article class="float-card reveal" data-tilt>
+        <span class="float-card__icon" aria-hidden="true">🧪</span>
+        <h3>Muestreo</h3>
+        <p>Extracción representativa de lotes para pruebas de laboratorio.</p>
+      </article>
+      <article class="float-card reveal" data-tilt>
+        <span class="float-card__icon" aria-hidden="true">♨️</span>
+        <h3>Secado</h3>
+        <p>Reducción controlada de humedad hasta el punto óptimo de exportación.</p>
+      </article>
+      <article class="float-card reveal" data-tilt>
+        <span class="float-card__icon" aria-hidden="true">🌿</span>
+        <h3>Fermentación</h3>
+        <p>Desarrollo del perfil aromático mediante procesos supervisados.</p>
+      </article>
+      <article class="float-card reveal" data-tilt>
+        <span class="float-card__icon" aria-hidden="true">🗂️</span>
+        <h3>Clasificación</h3>
+        <p>Separación por tamaño, defectos y grado según estándares del cliente.</p>
+      </article>
+      <article class="float-card reveal" data-tilt>
+        <span class="float-card__icon" aria-hidden="true">🏬</span>
+        <h3>Almacenamiento</h3>
+        <p>Bodegas climatizadas con control de plagas y trazabilidad por lote.</p>
+      </article>
+      <article class="float-card reveal" data-tilt>
+        <span class="float-card__icon" aria-hidden="true">💧</span>
+        <h3>Control de humedad</h3>
+        <p>Monitoreo continuo para preservar la calidad durante el almacenaje.</p>
+      </article>
+      <article class="float-card reveal" data-tilt>
+        <span class="float-card__icon" aria-hidden="true">📦</span>
+        <h3>Empaque</h3>
+        <p>Sacos certificados y paletizado listo para transporte internacional.</p>
+      </article>
+      <article class="float-card reveal" data-tilt>
+        <span class="float-card__icon" aria-hidden="true">🚢</span>
+        <h3>Exportación</h3>
+        <p>Gestión documental, aduanera y logística hasta el puerto de destino.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRATAMIENTO (Timeline) ============ -->
+<section class="section" id="tratamiento">
+  <div class="container">
+    <p class="eyebrow reveal">Tratamiento del Cacao</p>
+    <h2 class="section__title reveal">El recorrido del grano, paso a paso</h2>
+  </div>
+
+  <div class="timeline container">
+    <div class="timeline__line" aria-hidden="true"></div>
+
+    <div class="timeline__item reveal">
+      <div class="timeline__marker">01</div>
+      <div class="timeline__card glass"><h3>Recepción</h3><p>Ingreso del cacao y registro de procedencia.</p></div>
+    </div>
+    <div class="timeline__item reveal">
+      <div class="timeline__marker">02</div>
+      <div class="timeline__card glass"><h3>Muestreo</h3><p>Toma de muestras representativas del lote.</p></div>
+    </div>
+    <div class="timeline__item reveal">
+      <div class="timeline__marker">03</div>
+      <div class="timeline__card glass"><h3>Inspección</h3><p>Evaluación física y sensorial del grano.</p></div>
+    </div>
+    <div class="timeline__item reveal">
+      <div class="timeline__marker">04</div>
+      <div class="timeline__card glass"><h3>Fermentación</h3><p>Desarrollo controlado de aroma y sabor.</p></div>
+    </div>
+    <div class="timeline__item reveal">
+      <div class="timeline__marker">05</div>
+      <div class="timeline__card glass"><h3>Secado</h3><p>Reducción de humedad hasta el nivel óptimo.</p></div>
+    </div>
+    <div class="timeline__item reveal">
+      <div class="timeline__marker">06</div>
+      <div class="timeline__card glass"><h3>Clasificación</h3><p>Separación por calidad, tamaño y grado.</p></div>
+    </div>
+    <div class="timeline__item reveal">
+      <div class="timeline__marker">07</div>
+      <div class="timeline__card glass"><h3>Almacenamiento</h3><p>Resguardo en bodegas climatizadas y trazables.</p></div>
+    </div>
+    <div class="timeline__item reveal">
+      <div class="timeline__marker">08</div>
+      <div class="timeline__card glass"><h3>Empaque</h3><p>Embalaje certificado listo para transporte.</p></div>
+    </div>
+    <div class="timeline__item reveal">
+      <div class="timeline__marker">09</div>
+      <div class="timeline__card glass"><h3>Exportación</h3><p>Despacho hacia puertos y mercados internacionales.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ESTADÍSTICAS ============ -->
+<section class="section stats" id="estadisticas">
+  <div class="container stats__grid">
+    <div class="stat reveal">
+      <span class="stat__number" data-target="500" data-suffix="+">0</span>
+      <span class="stat__label">Exportaciones</span>
+    </div>
+    <div class="stat reveal">
+      <span class="stat__number" data-target="250" data-suffix="+">0</span>
+      <span class="stat__label">Clientes</span>
+    </div>
+    <div class="stat reveal">
+      <span class="stat__number" data-target="15" data-suffix="">0</span>
+      <span class="stat__label">Países</span>
+    </div>
+    <div class="stat reveal">
+      <span class="stat__number" data-target="99" data-suffix="%">0</span>
+      <span class="stat__label">Calidad Certificada</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERÍA (Masonry + Lightbox) ============ -->
+<section class="section section--tinted" id="galeria">
+  <div class="container">
+    <p class="eyebrow reveal">Galería</p>
+    <h2 class="section__title reveal">El proceso, en imágenes</h2>
+  </div>
+
+  <div class="masonry container" id="masonry">
+    <img src="exprotacion internacional .png" alt="Proceso de tratamiento de cacao 1" loading="lazy" class="masonry__item reveal">
+    <img src="inspeccion de calidad1.png" alt="Proceso de tratamiento de cacao 2" loading="lazy" class="masonry__item reveal">
+    <img src="img/gallery-3.jpg" alt="Proceso de tratamiento de cacao 3" loading="lazy" class="masonry__item reveal">
+    <img src="img/gallery-4.jpg" alt="Proceso de tratamiento de cacao 4" loading="lazy" class="masonry__item reveal">
+    <img src="img/gallery-5.jpg" alt="Proceso de tratamiento de cacao 5" loading="lazy" class="masonry__item reveal">
+    <img src="img/gallery-6.jpg" alt="Proceso de tratamiento de cacao 6" loading="lazy" class="masonry__item reveal">
+    <img src="img/gallery-7.jpg" alt="Proceso de tratamiento de cacao 7" loading="lazy" class="masonry__item reveal">
+    <img src="img/gallery-8.jpg" alt="Proceso de tratamiento de cacao 8" loading="lazy" class="masonry__item reveal">
+    <img src="img/gallery-9.jpg" alt="Proceso de tratamiento de cacao 9" loading="lazy" class="masonry__item reveal">
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar">✕</button>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+</section>
+
+<!-- ============ POR QUÉ ELEGIRNOS ============ -->
+<section class="section" id="exportacion">
+  <div class="container">
+    <p class="eyebrow reveal">¿Por qué elegirnos?</p>
+    <h2 class="section__title reveal">Confianza construida lote a lote</h2>
+
+    <div class="why-grid">
+      <div class="why-card glass reveal">
+        <span class="why-card__icon" aria-hidden="true">✔</span>
+        <h3>Calidad garantizada</h3>
+        <p>Cada envío cumple con protocolos de calidad verificables y documentados.</p>
+      </div>
+      <div class="why-card glass reveal">
+        <span class="why-card__icon" aria-hidden="true">👤</span>
+        <h3>Personal especializado</h3>
+        <p>Equipo capacitado en cata, clasificación y control fitosanitario.</p>
+      </div>
+      <div class="why-card glass reveal">
+        <span class="why-card__icon" aria-hidden="true">🌎</span>
+        <h3>Exportación internacional</h3>
+        <p>Experiencia logística hacia Europa, Norteamérica y Asia.</p>
+      </div>
+      <div class="why-card glass reveal">
+        <span class="why-card__icon" aria-hidden="true">🛡️</span>
+        <h3>Inspección profesional</h3>
+        <p>Controles independientes en cada etapa del tratamiento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIOS ============ -->
+<section class="section section--tinted" id="testimonios">
+  <div class="container">
+    <p class="eyebrow reveal">Testimonios</p>
+    <h2 class="section__title reveal">Lo que dicen nuestros clientes</h2>
+  </div>
+
+  <div class="testi container" id="testi">
+    <div class="testi__track" id="testiTrack">
+      <div class="testi__card glass is-active">
+        <img src="cacaooe.png" alt="Retrato de cliente" class="testi__avatar">
+        <p class="testi__quote">El nivel de detalle en la inspección nos dio total confianza para exportar a Europa sin contratiempos.</p>
+        <p class="testi__name">Laura Fernández <span>· España</span></p>
+      </div>
+      <div class="testi__card glass">
+        <img src="ceceao.png" alt="Retrato de cliente" class="testi__avatar">
+        <p class="testi__quote">La trazabilidad de cada lote es impecable. Sabemos exactamente por dónde pasó nuestro cacao.</p>
+        <p class="testi__name">Marco Bellini <span>· Italia</span></p>
+      </div>
+      <div class="testi__card glass">
+        <img src="img/avatar-3.png" alt="Retrato de cliente" class="testi__avatar">
+        <p class="testi__quote">Trabajar con este equipo redujo nuestros tiempos de despacho y mejoró la calidad recibida.</p>
+        <p class="testi__name">Wei Chen <span>· Singapur</span></p>
+      </div>
+    </div>
+    <div class="testi__dots" id="testiDots"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="section" id="contacto">
+  <div class="container contact__grid">
+    <div class="contact__info reveal">
+      <p class="eyebrow">Contacto</p>
+      <h2 class="section__title">Hablemos de tu próximo embarque</h2>
+      <p class="section__lead">Cuéntanos sobre tu proyecto de exportación y te responderemos en menos de 24 horas.</p>
+
+      <ul class="contact__list">
+        <li><strong>Dirección:</strong> Vía a Daule Km 12.5, Guayaquil, Ecuador</li>
+        <li><strong>Teléfono:</strong> +593 99 123 4567</li>
+        <li><strong>Correo:</strong> contacto@cacaodelpacifico.ec</li>
+      </ul>
+
+      <div class="contact__map glass">
+        <iframe
+          title="Mapa de ubicación"
+          src="https://www.google.com/maps?q=Guayaquil,Ecuador&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <form class="contact__form glass reveal" id="contactForm">
+      <h3>Envíanos un mensaje</h3>
+
+      <label class="field">
+        <span>Nombre</span>
+        <input type="text" name="nombre" required>
+      </label>
+      <label class="field">
+        <span>Empresa</span>
+        <input type="text" name="empresa">
+      </label>
+      <label class="field">
+        <span>Correo</span>
+        <input type="email" name="correo" required>
+      </label>
+      <label class="field">
+        <span>Teléfono</span>
+        <input type="tel" name="telefono">
+      </label>
+      <label class="field">
+        <span>Mensaje</span>
+        <textarea name="mensaje" rows="4" required></textarea>
+      </label>
+
+      <button type="submit" class="btn btn--shine btn--block">Enviar mensaje</button>
+      <p class="form__status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <img src="ilq-logo.png" alt="Cacao del Pacífico" class="footer__logo">
+      <span>Cacao<em>del Pacífico</em></span>
+      <p>Tratamiento, inspección y exportación de cacao ecuatoriano.</p>
+    </div>
+
+    <div class="footer__links">
+      <h4>Navegación</h4>
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+
+    <div class="footer__social">
+      <h4>Síguenos</h4>
+      <div class="footer__icons">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__legal container">
+    <p>© <span id="year"></span> Cacao del Pacífico. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
